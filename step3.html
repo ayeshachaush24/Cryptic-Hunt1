@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptic Hunt - Step 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8dc;
+            color: #343a40;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 50%;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Step 3: Vishwakarandak</h1>
+    <p>Riddle: "A war is waged not with swords alone,<br>
+    Departments rise to claim the throne.<br>
+    Through sports, arts, and brains, they compete,<br>
+    To win the prize, where all paths meet.<br>
+    It’s the cup we cherish, the pride we defend,<br>
+    The name of the event—what’s the legend?"</p>
+    <input type="text" id="vishAnswer" placeholder="Enter your answer here" />
+    <button onclick="checkVishAnswer()">Submit</button>
+
+    <script>
+        function checkVishAnswer() {
+            const answer = document.getElementById("vishAnswer").value.toLowerCase();
+            if (answer === "vishwakarandak") {
+                window.location.href = "congratulations.html"; // Redirect to final page
+            } else {
+                alert("Wrong answer! Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
