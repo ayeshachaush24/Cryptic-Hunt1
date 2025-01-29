@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptic Hunt - Step 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 50%;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Cryptic Hunt!</h1>
+    <p>Riddle: "Where do wizards and witches catch their train to Hogwarts?"</p>
+    <input type="text" id="answer" placeholder="Enter your answer here" />
+    <button onclick="checkAnswer()">Submit</button>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value.toLowerCase();
+            if (answer === "platform9andthreequarters") {
+                window.location.href = "nimbus2000.html"; // Redirect to next page
+            } else {
+                alert("Wrong answer! Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
